@@ -18,7 +18,7 @@
         label="Go Home"
         no-caps
       />
-    </div>
+    </div>  
   </div>
 </template>
 
