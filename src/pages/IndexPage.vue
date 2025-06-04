@@ -5,18 +5,18 @@
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="">
+            <img src="../assets/image/image.png">
           </q-avatar>
-          Title
+          Aquece Ai
         </q-toolbar-title>
 
         <q-btn dense flat round icon="menu" @click="toggleRightDrawer" />
       </q-toolbar>
 
       <q-tabs align="left">
-        <q-route-tab to="/page1" label="Page One" />
-        <q-route-tab to="/page2" label="Page Two" />
-        <q-route-tab to="/page3" label="Page Three" />
+        <q-route-tab to="/sobre" label="Page One" />
+        <q-route-tab to="/localizacao" label="Page Two" />
+        <q-route-tab to="/contatos" label="Page Three" />
       </q-tabs>
     </q-header>
 
