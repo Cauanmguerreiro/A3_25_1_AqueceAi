@@ -1,8 +1,8 @@
 <template>
   <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
     <div>
-      <div style="font-size: 30vh">
-        DSADSADA
+      <div style="font-size: 5vh">
+        Sobre
       </div>
 
       <div class="text-h2" style="opacity:.4">
