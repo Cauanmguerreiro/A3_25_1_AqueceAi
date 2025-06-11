@@ -44,6 +44,19 @@
     <q-page-container>
       <router-view />
     </q-page-container>
+
+    <q-footer elevated class="primary">
+      <q-toolbar>
+        <q-toolbar-title>
+          <div class="text-caption">© {{ new Date().getFullYear() }} Aquece Aí. Todos os direitos reservados.</div>
+        </q-toolbar-title>
+
+        <div>
+          <q-btn flat round dense icon="code" type="a" href="https://github.com/Cauanmguerreiro/A3_25_1_AqueceAi" target="_blank" />
+        </div>
+      </q-toolbar>
+    </q-footer>
+
   </q-layout>
 </template>
 
