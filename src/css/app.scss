@@ -1,1 +1,168 @@
 // app global css in SCSS form
+.top-bar {
+  background-color: #7d69be;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  height: 48px; /* ajuste aqui se ainda estiver grande */
+  width: auto;
+}
+
+.logo-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.container {
+  font-family: 'Noto Sans', sans-serif;
+  color: #333;
+  background-color: #fff;
+  max-width: 400px;
+  margin: auto;
+  padding: 0 20px 20px;
+}
+
+/* TOPO ROXO */
+.top-bar {
+  background-color: #7d69be;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+.logo-img {
+  height: 64px;
+  width: auto;
+}
+
+.logo-text {
+  color: white;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+/* TEXTO PRINCIPAL */
+.intro {
+  margin-top: 24px;
+}
+
+.intro p {
+  margin-bottom: 16px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.highlight-blue {
+  color: #5778da;
+  font-weight: 600;
+}
+
+.highlight-purple {
+  color: #7d69be;
+  font-weight: 600;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 30px 0;
+}
+
+.card {
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(125, 105, 190, 0.2);
+  text-align: center;
+}
+
+
+.card h2 {
+  color: #7d69be;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.card-icon {
+  height: 90px;
+  margin-bottom: 0px;
+}
+
+/* CHAMADA À AÇÃO */
+.cta {
+  text-align: center;
+  margin: 40px 0 5px;
+}
+
+.cta h3 {
+  font-size: 1.4rem;
+  color: #7d69be;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* RODAPÉ */
+.footer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img {
+  
+  height: 150px;
+}
+
+.back-home {
+  display: block;
+  margin: 0px auto 15px;
+  padding: 10px 20px;
+  background-color: #7d69be;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.back-home:hover {
+  background-color: #5f53a3;
+}
