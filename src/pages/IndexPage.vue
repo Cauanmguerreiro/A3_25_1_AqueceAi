@@ -15,8 +15,8 @@
 
       <q-tabs align="left">
         <q-route-tab to="/sobre" label="Sobre" />
-        <q-route-tab to="/localizacao" label="Contatos" />
-        <q-route-tab to="/contatos" label="Localizações" />
+        <q-route-tab to="/contatos" label="Contatos" />
+        <q-route-tab to="/endereco" label="Localizações" />
       </q-tabs>
     </q-header>
 

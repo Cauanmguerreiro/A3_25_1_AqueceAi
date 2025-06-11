@@ -1,31 +1,33 @@
 <template>
-  <div class="fullscreen bg-blue text-white text-center q-pa-md flex flex-center">
-    <div>
-      <div style="font-size: 30vh">
-        AA
+  <div class="local-container">
+
+    <!-- CONTEÚDO -->
+    <div class="content">
+      <!-- ESPAÇO PARA IMAGEM (MAPA OU OUTRO) -->
+      <div class="mapa-container">
+        <img src="../assets/image/homemfrio.jpg" alt="Mapa de localização" class="mapa-img" />
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
+      <!-- INFORMAÇÕES -->
+      <div class="local-info">
+        <img src="../assets/image/loc.png" alt="Ícone de localização" class="local-icon" />
+        <p><strong>Endereço:</strong> Rua Orfanotrófio, 555 - Alto Teresópolis, Porto Alegre - RS</p>
+        <p class="p2"><strong>Atuação:</strong> Entregas, arrecadação e suporte aos mais vulneráveis.</p>
       </div>
 
-      <q-btn
-        class="q-mt-xl"
-        color="white"
-        text-color="blue"
-        unelevated
-        to="/"
-        label="Go Home"
-        no-caps
-      />
-    </div>  
+      <!-- ESPAÇO DO HUB ÂNIMA LAB -->
+      <footer class="footer">
+        <img src="../assets/image/uniritter.png" alt="Hub Ânima Lab" class="footer-img" />
+      </footer>
+    </div>
+
+    <!-- BOTÃO VOLTAR -->
+    <router-link to="/" class="back-home">← Voltar à Página Inicial</router-link>
   </div>
 </template>
 
 <script>
-import { defineComponent } from 'vue';
-
-export default defineComponent({
-  name: 'ErrorNotFound'
-});
+export default {
+  name: 'LocalAtuacao'
+};
 </script>

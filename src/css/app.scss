@@ -166,3 +166,85 @@
 .back-home:hover {
   background-color: #5f53a3;
 }
+
+.local-container {
+  font-family: 'Noto Sans', sans-serif;
+  color: #333;
+  background-color: #fff;
+  max-width: 400px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.top-bar {
+  background-color: #7d69be;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.page-title {
+  color: white;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+.content {
+  padding: 20px;
+}
+
+.mapa-container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.mapa-img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(125, 105, 190, 0.2);
+}
+
+.local-info {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: px;
+}
+
+.p2 {
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+
+.local-icon {
+  height: 80px;
+}
+
+.anima-lab {
+  text-align: center;
+  color: #777;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
+
+.back-home {
+  display: block;
+  margin: 0px auto 0;
+  padding: 10px 20px;
+  background-color: #7d69be;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  width: fit-content;
+  transition: background-color 0.3s;
+}
+
+.back-home:hover {
+  background-color: #5f53a3;
+}
