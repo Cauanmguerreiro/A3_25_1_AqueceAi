@@ -2,7 +2,7 @@
   <q-page class="q-pa-md main-page">
     <div class="q-pa-md flex flex-center column items-center">
       <!-- Imagem estilizada com sombra da forma da logo -->
-      <img src="src/assets/image/LogoAqueceAi.png" alt="Logo Aquece Aí" class="main-image" />
+      <img src="../assets/image/LogoAqueceAi.png" alt="Logo Aquece Aí" class="main-image" />
 
       <h1 class="text-h4 text-center q-mt-md">
         Sentindo frio? se <span class="text-primary">Aquece Aí!</span>
