@@ -100,6 +100,7 @@
 <script setup>
 import { ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
+import Logo.png from '../assets/image/logo.png'
 
 // Lista para links de navegação interna
 const navigationLinks = [
