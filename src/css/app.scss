@@ -121,12 +121,52 @@
 .card-icon {
   height: 90px;
   margin-bottom: 0px;
+  color:#5f53a3;
 }
 
 /* CHAMADA À AÇÃO */
 .cta {
+  // --- Estado Inicial (semelhante ao .card) ---
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  padding: 32px 24px; // Um pouco mais de padding vertical
   text-align: center;
-  margin: 40px 0 5px;
+  cursor: pointer;
+  
+  // Sombra inicial sutil
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  
+  // Posição inicial
+  transform: translateY(0);
+  
+  // Animação suave para as propriedades que vamos alterar
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  // --- Efeito ao passar o mouse (:hover) ---
+  &:hover {
+    // Efeito de "levantar"
+    transform: translateY(-5px);
+
+    // Sombra com a cor primária do seu tema e transparência
+    box-shadow: 0 8px 20px rgba($primary, 0.2);
+  }
+  
+  // --- Estilizando os elementos internos do CTA ---
+
+  // Mantendo o estilo do ícone que você já tinha
+  .card-icon {
+    height: 90px;
+    margin-bottom: 0px;
+    color: $primary;
+  }
+
+  // Dando um pouco mais de destaque para o título
+  h3 {
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
 }
 
 .cta h3 {
