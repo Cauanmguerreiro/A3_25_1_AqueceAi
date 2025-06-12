@@ -1,4 +1,9 @@
 // app global css in SCSS form
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+
 .top-bar {
   background-color: #7d69be;
   padding: 10px 16px;
@@ -50,8 +55,6 @@
   gap: 12px;
 }
 
-
-
 .logo-img {
   height: 64px;
   width: auto;
@@ -102,7 +105,6 @@
   text-align: center;
 }
 
-
 .card h2 {
   color: #7d69be;
   margin-top: 0px;
@@ -144,7 +146,6 @@
 }
 
 .footer-img {
-  
   height: 150px;
 }
 
@@ -217,7 +218,6 @@
   text-align: center;
   margin-bottom: 0px;
 }
-
 
 .local-icon {
   height: 80px;
