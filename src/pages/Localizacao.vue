@@ -8,10 +8,18 @@
         <img src="../assets/image/homemfrio.jpg" alt="Mapa de localização" class="mapa-img" />
       </div>
 
-      <!-- INFORMAÇÕES -->
+      <div class="upper">
+        <p>Pressione o <span class="highlight-purple"> icone </span> abaixo </p>
+      </div>
+
+
+      <!-- LOCALIZAÇÃO COM ÍCONE CLICÁVEL -->
       <div class="local-info">
+        <a href="https://www.google.com/maps?q=Av.+Manoel+Elias,+2001+-+Passo+das+Pedras,+Porto+Alegre+-+RS,+91240-261" 
+        target="_blank" rel="noopener">
         <img src="../assets/image/loc.png" alt="Ícone de localização" class="local-icon" />
-        <p><strong>Endereço:</strong> Rua Orfanotrófio, 555 - Alto Teresópolis, Porto Alegre - RS</p>
+        </a>
+        <p><strong>Endereço:</strong>  Av. Manoel Elias, 2001 - Passo das Pedras, Porto Alegre - RS, 91240-261</p>
         <p class="p2"><strong>Atuação:</strong> Entregas, arrecadação e suporte aos mais vulneráveis.</p>
       </div>
 
