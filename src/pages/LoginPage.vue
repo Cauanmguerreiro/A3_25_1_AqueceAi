@@ -1,4 +1,4 @@
-<!-- src/pages/LoginPage.vue -->
+
 <template>
   <q-page class="flex flex-center column">
     <div id="google-button"></div>
@@ -8,10 +8,10 @@
 <script setup>
 import { onMounted } from 'vue'
 import { useQuasar } from 'quasar'
-import { useRouter } from 'vue-router' // ⬅️ Importa o roteador
+import { useRouter } from 'vue-router'
 
 const $q = useQuasar()
-const router = useRouter() // ⬅️ Usa o roteador
+const router = useRouter()
 
 const handleCredentialResponse = (response) => {
   const jwt = response.credential
@@ -19,7 +19,6 @@ const handleCredentialResponse = (response) => {
 
   console.log('Usuário:', userData)
 
-  // Armazena no localStorage
   localStorage.setItem('user', JSON.stringify(userData))
 
   $q.notify({
@@ -27,7 +26,7 @@ const handleCredentialResponse = (response) => {
     message: `Bem-vindo(a), ${userData.name}`
   })
 
-  // ✅ Redireciona para a rota protegida
+
   router.push('/IndexPage')
 }
 
