@@ -54,27 +54,8 @@
           </q-card-section>
         </q-card>
     </div>
-
-    <div class="text-center q-mt-xl">
-      <q-separator spaced="lg" />
-      <img
-        src="src/assets/image/uniritter.png"
-        alt="Hub Ânima Lab"
-        style="max-width: 150px; opacity: 0.7;"
-      />
-    </div>
-
-    <div class="text-center q-mt-xl">
-      <q-btn
-        to="/"
-        icon="arrow_back"
-        label="Voltar à Página Inicial"
-        flat
-        color="primary"
-      />
-    </div>
-
-  </q-page>
+    
+      </q-page>
 </template>
 
 <script>
