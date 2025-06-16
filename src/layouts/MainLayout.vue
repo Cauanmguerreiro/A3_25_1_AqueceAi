@@ -76,24 +76,7 @@
     </q-page-container>
 
     <!-- IMAGENS E LINK VOLTAR ------------------------------------->
-    <div class="text-center q-mt-xl">
-      <q-separator spaced="lg" />
-      <img
-        src="~assets/image/uniritter.png"
-        alt="Hub Ânima Lab"
-        style="max-width: 250px; opacity: 0.7"
-      />
-    </div>
 
-    <div class="text-center q-mt-xl">
-      <q-btn
-        to="/"
-        icon="arrow_back"
-        label="Voltar à Página Inicial"
-        flat
-        style="padding-bottom: 2%"
-      />
-    </div>
   </q-layout>
 </template>
 
