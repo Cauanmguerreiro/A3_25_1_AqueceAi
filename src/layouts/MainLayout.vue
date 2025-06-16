@@ -1,12 +1,15 @@
 <template>
-  <q-layout view="lHh lpR lFf">
+  <!-- HEADER fixo + drawer esquerdo que empurra o conteúdo -->
+  <q-layout view="lHh Lpr lFf">
+    <!-- HEADER ---------------------------------------------------->
     <q-header elevated>
       <q-toolbar>
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <header class="top-bar">
           <div class="brand">
-            <img src="../assets/image/image.png" alt="Logo" class="logo-img" />
+            <!-- use "~assets" para resolver via Webpack -->
+            <img src="~assets/image/image.png" alt="Logo" class="logo-img" />
           </div>
         </header>
 
@@ -23,9 +26,16 @@
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+    <!-- DRAWER ESQUERDO ------------------------------------------->
+    <q-drawer
+      v-model="leftDrawerOpen"
+      show-if-above
+      bordered
+      :mini="!leftDrawerOpen && $q.screen.gt.sm"
+    >
       <q-list>
         <q-item-label header>Menu</q-item-label>
+
         <q-item
           v-for="item in navigationLinks"
           :key="item.title"
@@ -34,9 +44,7 @@
           :to="item.to"
           exact
         >
-          <q-item-section avatar>
-            <q-icon :name="item.icon" />
-          </q-item-section>
+          <q-item-section avatar><q-icon :name="item.icon" /></q-item-section>
           <q-item-section>{{ item.title }}</q-item-section>
         </q-item>
 
@@ -47,6 +55,7 @@
       </q-list>
     </q-drawer>
 
+    <!-- DRAWER DIREITO -------------------------------------------->
     <q-drawer v-model="rightDrawerOpen" side="right" overlay bordered>
       <q-list>
         <q-item-label header>Menu Usuário</q-item-label>
@@ -61,17 +70,18 @@
       </q-list>
     </q-drawer>
 
+    <!-- CONTEÚDO --------------------------------------------------->
     <q-page-container>
       <router-view />
     </q-page-container>
 
-
+    <!-- IMAGENS E LINK VOLTAR ------------------------------------->
     <div class="text-center q-mt-xl">
       <q-separator spaced="lg" />
       <img
-        src="src/assets/image/uniritter.png"
+        src="~assets/image/uniritter.png"
         alt="Hub Ânima Lab"
-        style="max-width: 250px; opacity: 0.7;"
+        style="max-width: 250px; opacity: 0.7"
       />
     </div>
 
@@ -81,19 +91,18 @@
         icon="arrow_back"
         label="Voltar à Página Inicial"
         flat
-        style="padding-bottom: 2%;"
+        style="padding-bottom: 2%"
       />
     </div>
-
-    
   </q-layout>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+import { useQuasar } from 'quasar'
 import EssentialLink from 'components/EssentialLink.vue'
 
-// Lista para links de navegação interna
+/* -------------------- LINKS -------------------- */
 const navigationLinks = [
   { title: 'Página Inicial', icon: 'home', to: '/' },
   { title: 'Sobre', icon: 'info', to: '/sobre' },
@@ -101,9 +110,7 @@ const navigationLinks = [
   { title: 'Localizações', icon: 'location_on', to: '/endereco' },
 ]
 
-// Lista para links externos (GitHub)
 const linksList = [
-  // Lembre-se de preencher com os dados corretos
   {
     title: 'Github do Cauan Guerreiro',
     caption: 'github.com/Cauanmguerreiro',
@@ -130,15 +137,27 @@ const linksList = [
   },
 ]
 
-// Variáveis reativas para controlar o estado dos menus
+/* -------------------- ESTADO -------------------- */
+const $q = useQuasar()
 const leftDrawerOpen = ref(false)
 const rightDrawerOpen = ref(false)
 
-// Funções para alterar o estado (abrir/fechar os menus)
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value
-}
-function toggleRightDrawer() {
-  rightDrawerOpen.value = !rightDrawerOpen.value
-}
+/* Abre o drawer esquerdo por padrão em telas maiores que “sm” */
+onMounted(() => {
+  if ($q.screen.gt.sm) leftDrawerOpen.value = true
+})
+
+/* Toggles ---------------------------------------------------------*/
+const toggleLeftDrawer = () => (leftDrawerOpen.value = !leftDrawerOpen.value)
+const toggleRightDrawer = () => (rightDrawerOpen.value = !rightDrawerOpen.value)
 </script>
+
+<style scoped>
+.top-bar {
+  display: flex;
+  align-items: center;
+}
+.brand .logo-img {
+  height: 40px;
+}
+</style>
