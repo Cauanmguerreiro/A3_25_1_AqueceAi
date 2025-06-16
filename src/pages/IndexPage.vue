@@ -7,7 +7,7 @@
         Sentindo frio? Se <span class="text-primary">Aquece Aí!</span>
       </h1>
 
-      <p class="text-subtitle1 text-center q-mb-lg">Procure por abrigos de doação perto de você.</p>
+      <p class="text-subtitle1 text-center q-mb-lg">Procure por abrigos de doação perto de você!</p>
 
       <div class="row q-gutter-md">
         <q-btn
@@ -30,6 +30,3 @@
       </div>
     </div>
   </q-page>
-</template>
-
-
