@@ -72,14 +72,14 @@
         style="padding-bottom: 2%"
       />
     </div>
-    
+
       </q-page>
 </template>
 
 <script>
 import { defineComponent } from 'vue';
 
-// Nome do componente atualizado para corresponder ao nome do arquivo (boa prática)
+
 export default defineComponent({
   name: 'ContatosPage'
 });

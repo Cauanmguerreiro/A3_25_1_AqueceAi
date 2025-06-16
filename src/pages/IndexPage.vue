@@ -10,24 +10,23 @@
       <p class="text-subtitle1 text-center q-mb-lg">Procure por abrigos de doação perto de você!</p>
 
       <div class="row q-gutter-md">
-        <q-btn 
-          to="/endereco" 
-          label="Buscar abrigos" 
-          no-caps 
-          color="primary" 
-          icon="search" 
-          size="lg" 
+        <q-btn
+          to="/endereco"
+          label="Buscar abrigos"
+          no-caps
+          color="primary"
+          icon="search"
+          size="lg"
         />
-        <q-btn 
-          to="/sobre" 
-          label="Sobre nós" 
-          no-caps 
-          color="primary" 
-          icon="info" 
-          size="lg" 
-          outline 
+        <q-btn
+          to="/sobre"
+          label="Sobre nós"
+          no-caps
+          color="primary"
+          icon="info"
+          size="lg"
+          outline
         />
       </div>
     </div>
   </q-page>
-</template>
