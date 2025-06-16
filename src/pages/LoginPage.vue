@@ -1,6 +1,7 @@
 <!-- src/pages/LoginPage.vue -->
 <template>
   <q-page class="flex flex-center column">
+    <img src="~assets/image/LogoAqueceAi.png" alt="Logo Aquece Aí" class="main-image" />
     <div id="google-button"></div>
   </q-page>
 </template>
@@ -51,12 +52,16 @@ onMounted(() => {
     })
 
     window.google.accounts.id.renderButton(
-      document.getElementById('google-button'),
-      {
-        theme: 'outline',
-        size: 'large'
-      }
-    )
+    document.getElementById('google-button'),
+    {
+    theme: 'filled_blue',    // 'outline', 'filled_blue', 'filled_black'
+    size: 'large',           // 'small', 'medium', 'large'
+    text: 'continue_with',   // 'signin_with', 'continue_with', 'signup_with'
+    shape: 'pill',           // 'rectangular', 'pill', 'circle', 'square'
+    width: 250               // Largura em pixels
+    }
+)
+
   } else {
     console.error('Google SDK não carregado!')
   }

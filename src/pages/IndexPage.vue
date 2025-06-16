@@ -37,6 +37,32 @@
 </script>
 
 <style scoped>
+/* Botão principal (Buscar abrigos) */
+.q-btn.bg-primary {
+  box-shadow: 0 4px 10px rgba(var(--q-primary-rgb), 0.4);
+  border-radius: 12px;
+  font-weight: 600;
+  transition: box-shadow 0.3s ease;
+}
+
+.q-btn.bg-primary:hover {
+  box-shadow: 0 6px 16px rgba(var(--q-primary-rgb), 0.6);
+}
+
+/* Botão outline (Sobre nós) */
+.q-btn.q-btn--outline {
+  border-width: 2px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.q-btn.q-btn--outline:hover {
+  background-color: var(--q-primary);
+  color: white !important;
+  box-shadow: 0 6px 16px rgba(var(--q-primary-rgb), 0.6);
+}
+
 .main-image {
   max-width: 300px;
   width: 100%;
