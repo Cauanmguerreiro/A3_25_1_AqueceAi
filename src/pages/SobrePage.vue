@@ -16,7 +16,7 @@
 
       <section class="q-mb-xl">
         <div class="row q-col-gutter-md">
-          
+
           <div class="col-12 col-md-4">
             <q-card flat bordered class="full-height text-center">
               <q-card-section>
@@ -36,7 +36,7 @@
               </q-card-section>
             </q-card>
           </div>
-          
+
           <div class="col-12 col-md-4">
             <q-card flat bordered class="full-height text-center">
               <q-card-section>
@@ -77,24 +77,8 @@
       />
     </div>
 
-      
+
   </q-page>
 </template>
 
-<script setup>
-  // Script agora é limpo e moderno, pronto para qualquer lógica futura.
-  // O nome do componente é definido pelo nome do arquivo.
-</script>
 
-<style scoped>
-/* Estilos personalizados para os destaques no texto */
-.highlight-blue {
-  color: #1976D2; /* Cor primária do Quasar */
-  font-weight: 600;
-}
-
-.highlight-purple {
-  color: #9C27B0; /* Cor 'purple' do Quasar */
-  font-weight: 600;
-}
-</style>

@@ -4,6 +4,15 @@
   font-family: 'Noto Sans', sans-serif;
 }
 
+
+.main-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+
 .top-bar {
   background-color: #7d69be;
   padding: 10px 16px;
@@ -13,6 +22,17 @@
   width: 100%;
 }
 
+.highlight-blue {
+  color: #1976D2; 
+  font-weight: 600;
+}
+
+.highlight-purple {
+  color: #9C27B0; 
+  font-weight: 600;
+}
+
+
 .brand {
   display: flex;
   align-items: center;
@@ -20,7 +40,7 @@
 }
 
 .logo-img {
-  height: 48px; /* ajuste aqui se ainda estiver grande */
+  height: 48px; 
   width: auto;
 }
 
