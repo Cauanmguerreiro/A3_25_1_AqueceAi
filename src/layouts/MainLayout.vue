@@ -59,13 +59,9 @@
     <q-drawer v-model="rightDrawerOpen" side="right" overlay bordered>
       <q-list>
         <q-item-label header>Menu Usuário</q-item-label>
-        <q-item clickable v-ripple>
+        <q-item clickable v-ripple to="/login">
           <q-item-section avatar><q-icon name="person" /></q-item-section>
-          <q-item-section>Meu Perfil</q-item-section>
-        </q-item>
-        <q-item clickable v-ripple>
-          <q-item-section avatar><q-icon name="settings" /></q-item-section>
-          <q-item-section>Configurações</q-item-section>
+          <q-item-section>Login</q-item-section>
         </q-item>
       </q-list>
     </q-drawer>
