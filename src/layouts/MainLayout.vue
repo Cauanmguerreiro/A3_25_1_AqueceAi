@@ -9,7 +9,7 @@
         <header class="top-bar">
           <div class="brand">
             <!-- use "~assets" para resolver via Webpack -->
-            <img src="src/assets/image/LogoAqueceAi.png" alt="Logo" class="logo-img" />
+            <img src="~assets/image/LogoAqueceAi.png" alt="Logo" class="logo-img" />
           </div>
         </header>
 
