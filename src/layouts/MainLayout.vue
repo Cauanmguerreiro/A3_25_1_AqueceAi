@@ -120,10 +120,10 @@ const $q = useQuasar()
 const leftDrawerOpen = ref(false)
 const rightDrawerOpen = ref(false)
 
-/* Abre o drawer esquerdo por padrão em telas maiores que “sm” */
 onMounted(() => {
-  if ($q.screen.gt.sm) leftDrawerOpen.value = true
+  if ($q.screen.gt.sm) leftDrawerOpen.value = false
 })
+
 
 /* Toggles ---------------------------------------------------------*/
 const toggleLeftDrawer = () => (leftDrawerOpen.value = !leftDrawerOpen.value)
