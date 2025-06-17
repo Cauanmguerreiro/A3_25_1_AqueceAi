@@ -51,7 +51,7 @@
 
       <q-separator class="q-my-xl" />
       <section class="cta text-center q-mb-xl">
-        <q-avatar size="80px" font-size="50px" color="secondary" text-color="white" icon="favorite" />
+        <q-avatar size="80px" font-size="50px" color="primary" text-color="white" icon="favorite" />
         <h3 class="text-h5 q-mt-md">Quer fazer parte?</h3>
         <p class="text-body1 text-grey-7">Doe, compartilhe e seja um agente do bem.</p>
         <q-btn to="/contatos" color="primary" label="Entre em Contato" size="lg" class="q-mt-md" />
