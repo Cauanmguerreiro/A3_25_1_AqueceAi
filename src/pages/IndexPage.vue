@@ -28,6 +28,14 @@
           outline
         />
       </div>
+      <div class="text-center q-mt-xl">
+      <q-separator spaced="lg" />
+      <img
+        src="~assets/image/uniritter.png"
+        alt="Hub Ânima Lab"
+        style="max-width: 250px; opacity: 0.7"
+      />
+    </div>
     </div>
   </q-page>
 </template>
