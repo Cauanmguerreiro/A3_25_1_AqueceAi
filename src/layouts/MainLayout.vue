@@ -9,7 +9,7 @@
         <header class="top-bar">
           <div class="brand">
             <!-- use "~assets" para resolver via Webpack -->
-            <img src="@assets/image/image.png" alt="Logo" class="logo-img" />
+            <img src="src/assets/image/LogoAqueceAi.png" alt="Logo" class="logo-img" />
           </div>
         </header>
 
@@ -72,7 +72,6 @@
     </q-page-container>
 
     <!-- IMAGENS E LINK VOLTAR ------------------------------------->
-
   </q-layout>
 </template>
 

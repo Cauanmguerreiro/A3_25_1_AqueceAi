@@ -1,7 +1,7 @@
 <template>
   <q-page class="q-pa-md main-page">
     <div class="q-pa-md flex flex-center column items-center">
-      <img src="~assets/image/uniritter.png" alt="Logo Aquece Aí" class="main-image" />
+      <img src="~assets/image/image.png" alt="Logo Aquece Aí" class="main-image" />
 
       <h1 class="text-h4 text-center q-mt-md">
         Sentindo frio? Se <span class="text-primary">AQUECE AÍ!</span>

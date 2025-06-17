@@ -1,7 +1,7 @@
 
 <template>
   <q-page class="flex flex-center column">
-    <img src="~assets/image/uniritter.png" alt="Logo Aquece Aí" class="main-image" />
+    <img src="~assets/image/image.png" alt="Logo Aquece Aí" class="main-image" />
     <div id="google-button"></div>
   </q-page>
 </template>
