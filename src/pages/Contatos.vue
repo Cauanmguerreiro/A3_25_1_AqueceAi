@@ -48,7 +48,7 @@
     <div class="flex flex-center q-mb-xl">
        <q-card flat bordered class="text-center" style="max-width: 450px; width: 100%;">
           <q-card-section>
-            <q-avatar size="80px" font-size="50px" color="accent" text-color="white" icon="favorite" />
+            <q-avatar size="80px" font-size="50px" color="primary" text-color="white" icon="favorite" />
             <div class="text-h6 q-mt-md">Quer fazer parte?</div>
             <p class="q-mt-sm text-grey-8">Doe, compartilhe e seja um agente do bem.</p>
           </q-card-section>
