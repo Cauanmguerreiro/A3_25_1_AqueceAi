@@ -4,7 +4,7 @@
       <img src="~assets/image/LogoAqueceAi.png" alt="Logo Aquece Aí" class="main-image" />
 
       <h1 class="text-h4 text-center q-mt-md">
-        Sentindo frio? Se <span class="text-primary">Aquece Aí!</span>
+        Sentindo frio? Se <span class="text-primary">AQUECE AÍ!</span>
       </h1>
 
       <p class="text-subtitle1 text-center q-mb-lg">Procure por abrigos de doação perto de você!</p>
